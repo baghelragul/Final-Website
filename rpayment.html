@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UPI and Google Pay Payment Page</title>
+	<link rel="stylesheet" type="text/css" href="piyushh.css">
+</head>
+<body>
+	<div class="container">
+		<h1>Payment</h1>
+		<form>
+			<label for="name">Name:</label>
+			<input type="text" id="name" name="name" placeholder="Enter your name" required>
+			<label for="upi">UPI ID:</label>
+			<input type="text" id="upi" name="upi" placeholder="Enter your UPI ID" required>
+			<label for="amount">Amount:</label>
+			<input type="text" id="amount" name="amount" placeholder="Enter the amount to pay" required>
+			<div class="payment-options">
+				<label for="upi-radio">
+					<input type="radio" id="upi-radio" name="payment-option" value="upi" required>
+					<span class="payment-option-label">UPI</span>
+				</label>
+				<label for="googlepay-radio">
+					<input type="radio" id="googlepay-radio" name="payment-option" value="googlepay" required>
+					<span class="payment-option-label">Google Pay</span>
+				</label>
+			</div>
+			<input type="submit" value="Pay Now">
+		</form>
+	</div>
+</body>
+</html>
